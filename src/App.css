@@ -9,4 +9,12 @@ body {
 
 .container {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100vw;
 }
+
+

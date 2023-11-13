@@ -1,28 +1,25 @@
-import React, { useState } from 'react';
-import './App.css';
+import "./App.css";
+
+import { Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Home } from "./pages/Home/Home";
+import { Document } from "./pages/Doc/Document";
+import { Footer } from "./components/Footer";
+import {NavBar} from "./components/NavBar";
 
 const App = () => {
-  // Estado local del componente para gestionar la visibilidad del menú
-  const [menuVisible, setMenuVisible] = useState(false);
-
-  // Manejador de eventos para alternar la visibilidad del menú
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
-  };
-
   return (
     <div className="container">
-      <h1>Proyecto II</h1>
-      <h2>Producto integrador. El final del proceso</h2>
-
-      <button onClick={toggleMenu}>Menú</button>
-
-      {menuVisible && (
-        <ul>
-          <li>Actividades realizadas en el curso </li>
-          <li>Código fuente (comprimido) </li>
-        </ul>
-      )}
+      <BrowserRouter>
+      <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="document" element={<Document />} />
+          <Route path="/*" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
     </div>
   );
 };

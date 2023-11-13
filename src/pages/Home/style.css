@@ -1,0 +1,6 @@
+.home #logo {
+  width: 300px;
+}
+.home #mainNav button:last-child {
+  margin-left: 10px;
+}
