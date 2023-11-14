@@ -6,10 +6,7 @@ export const Home = () => {
   // Estado local del componente para gestionar la visibilidad del menú
   const [menuVisible, setMenuVisible] = useState(false);
 
-  // Manejador de eventos para alternar la visibilidad del menú
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
-  };
+ 
 
   return (
     <div className="home">
@@ -28,7 +25,7 @@ export const Home = () => {
         </ul>
       )}
 
-      <button onClick={toggleMenu}>Menú</button>
+      
     </div>
   );
 };

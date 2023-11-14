@@ -1,26 +1,30 @@
 .home #logo {
   width: 300px;
 }
+
 .home #mainNav button:last-child {
   margin-left: 10px;
 }
 
+.home h1 {
+  color: #F2620F;
+}
+
 .home h2 {
   margin-bottom: 40px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Garamond';
 }
 
 .home h3.custom-h3 {
-  font-family:'Arial', sans-serif;
+  font-family:'Garamond';
 }
 
 .home h3.custom-h3-2 {
-  margin-top: 0.5px;
-  font-family:'Arial', sans-serif;
-  color: rgb(241, 83, 72);
-  animation: rotateText 10s infinite linear; /* 5s es la duración de la animación, ajusta según tus preferencias */
+  color: #F2E30F;
+  animation: rotateText 4s infinite linear; /* 5s es la duración de la animación, ajusta según tus preferencias */
   transform-origin: center;
   display: inline-block; /* Esto evita que la rotación afecte el layout */
+font-size: 30px;
 }
 
 @keyframes rotateText {
