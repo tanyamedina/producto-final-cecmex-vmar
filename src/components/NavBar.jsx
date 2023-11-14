@@ -35,6 +35,7 @@ export const NavBar = () => {
         <button className="rayitasmenu" onClick={handleToggleMenu}>☰</button>
         {menuVisible && (
           <div className="popup-menu">
+            <button onClick={() => { navigate("/Home"); handleCloseMenu(); }}>Home</button>
             <button onClick={() => { navigate("/Document"); handleCloseMenu(); }}>Actividades</button>
             <button onClick={() => { navigate("/opcion2"); handleCloseMenu(); }}>Descargar código fuente</button>
             <button onClick={() => { navigate("/opcion3"); handleCloseMenu(); }}>Sistema implementado</button>
