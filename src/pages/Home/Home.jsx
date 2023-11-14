@@ -1,6 +1,6 @@
 import "./style.css";
 import React, { useState } from "react";
-import logo from "../../assets/Imagenes/udgvirtual_logo.png";
+import logo from "../../assets/Imagenes/descarga.png";
 
 export const Home = () => {
   // Estado local del componente para gestionar la visibilidad del menú
@@ -16,8 +16,10 @@ export const Home = () => {
       <img id="logo" src={logo} alt="logo" />
       <h1>Proyecto II</h1>
       <h2>Producto integrador. El final del proceso</h2>
-
-      <button onClick={toggleMenu}>Menú</button>
+      <h3 className="custom-h3">Scrum Team:</h3>
+      <div>
+        <h3 className="custom-h3-2">Mujeres programando</h3>
+      </div>
 
       {menuVisible && (
         <ul id="mainNav">
@@ -25,6 +27,8 @@ export const Home = () => {
           <button> Descargar Código fuente (comprimido) </button>
         </ul>
       )}
+
+      <button onClick={toggleMenu}>Menú</button>
     </div>
   );
 };

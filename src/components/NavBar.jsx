@@ -24,7 +24,7 @@ export const NavBar = () => {
 
   return (
     <nav>   
-      <button onClick={() => navigate("/home")}>Inicio</button>
+      <button onClick={() => navigate("/home")}>☰</button>
       <button onClick={() => navigate("/document")}>Documento</button>
       <button onClick={handleDownload}>Descargar Zip</button>
     </nav>

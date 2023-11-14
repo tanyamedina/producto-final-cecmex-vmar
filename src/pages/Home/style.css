@@ -4,3 +4,28 @@
 .home #mainNav button:last-child {
   margin-left: 10px;
 }
+
+.home h2 {
+  margin-bottom: 40px;
+}
+
+.home h3.custom-h3 {
+  font-family:'Arial', sans-serif;
+}
+
+.home h3.custom-h3-2 {
+  font-family:'Arial', sans-serif;
+  color: rgb(255, 42, 78);
+  animation: rotateText 10s infinite linear; /* 5s es la duración de la animación, ajusta según tus preferencias */
+  transform-origin: center;
+  display: inline-block; /* Esto evita que la rotación afecte el layout */
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
