@@ -1,6 +1,6 @@
 import "./style.css";
 import React, { useState } from "react";
-import logo from "../../assets/Imagenes/descarga.png";
+import logo from "../../assets/Imagenes/udgvirtual_logo.png";
 
 export const Home = () => {
   // Estado local del componente para gestionar la visibilidad del menú
