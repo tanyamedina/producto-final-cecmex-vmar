@@ -13,22 +13,6 @@ export const NavBar = () => {
     setMenuVisible(false);
   };
 
-  const handleDownload = () => {
-    try {
-      // Ruta relativa al archivo ZIP
-      const filePath = "./files/proyecto-2.zip";
-  
-      // Crear un enlace para descargar el archivo
-      const anchor = document.createElement("a");
-      anchor.href = filePath;
-      anchor.download = "proyecto-2.zip";
-      anchor.click();
-    } catch (error) {
-      alert("error al descargar el archivo");
-      console.error("Error al descargar el archivo", error);
-    }
-  };
-
   return (
     <nav>
       <div className="popup-container">
@@ -36,7 +20,9 @@ export const NavBar = () => {
         {menuVisible && (
           <div className="popup-menu">
             <button onClick={() => { navigate("/Home"); handleCloseMenu(); }}>Home</button>
-            <button onClick={() => { navigate("/Document"); handleCloseMenu(); }}>Actividades</button>
+            {/* Enlace directo al PDF */}
+            <a href="/files/U4-Actividades-realizadas.pdf" target="_blank" rel="noopener noreferrer" onClick={handleCloseMenu}>
+              Actividades</a>
             <button onClick={() => { navigate("/opcion2"); handleCloseMenu(); }}>Descargar código fuente</button>
             <button onClick={() => { navigate("/opcion3"); handleCloseMenu(); }}>Sistema implementado</button>
             <button onClick={() => { navigate("/opcion3"); handleCloseMenu(); }}>Reporte de modificaciones</button>
@@ -46,4 +32,4 @@ export const NavBar = () => {
       </div>
     </nav>
   );
-};
+}; 
