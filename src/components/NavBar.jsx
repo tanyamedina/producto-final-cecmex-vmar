@@ -22,7 +22,7 @@ export const NavBar = () => {
             <button onClick={() => { navigate("/Home"); handleCloseMenu(); }}>Home</button>
             {/* Enlace directo al PDF */}
             <a href="/files/U4-Actividades-realizadas.pdf" target="_blank" rel="noopener noreferrer" onClick={handleCloseMenu}>
-              Actividades</a>
+              Actividades realizadas</a>
             <button onClick={() => { navigate("/opcion2"); handleCloseMenu(); }}>Descargar código fuente</button>
             <button onClick={() => { navigate("/opcion3"); handleCloseMenu(); }}>Sistema implementado</button>
             <button onClick={() => { navigate("/opcion3"); handleCloseMenu(); }}>Reporte de modificaciones</button>
