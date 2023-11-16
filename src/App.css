@@ -1,5 +1,15 @@
+/* Estilos globales */
+
+:root {
+  --darkpurple: rgb(102, 8, 74);
+  --violet: rgb(187, 2, 132);
+  --rosa: rgb(240, 85, 106);
+  --verde: rgb(11, 226, 11);
+  --blancotrans: rgba(255, 255, 255, 0.781);
+}
+
 body {
-  background-color: #3854A6;
+  background-color: var(--darkpurple);
   color: white;
   margin: 0;
   display: flex;

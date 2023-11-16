@@ -7,24 +7,26 @@
 }
 
 .home h1 {
-  color: #F2620F;
+  color: #ffffff;
 }
 
 .home h2 {
-  margin-bottom: 40px;
-  font-family: 'Garamond';
+  font-family: 'Verdana';
+  margin-bottom: 80px;
 }
 
 .home h3.custom-h3 {
-  font-family:'Garamond';
+  font-family:'Garamond', sans-serif;
+  margin-bottom: 1px;
 }
 
 .home h3.custom-h3-2 {
-  color: #F2E30F;
+  font-family:'Georgia';
+  color: var(--rosa);
   animation: rotateText 4s infinite linear; /* 5s es la duración de la animación, ajusta según tus preferencias */
   transform-origin: center;
   display: inline-block; /* Esto evita que la rotación afecte el layout */
-font-size: 30px;
+  font-size: 30px;
 }
 
 @keyframes rotateText {

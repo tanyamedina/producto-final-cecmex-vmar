@@ -1,5 +1,5 @@
 .footer{
-    background-color: #3854A6;
+    background-color: var(--darkpurple);
     width: 100%;
     color: gray;
     display: flex;
@@ -10,7 +10,7 @@
 }   
 
 nav {
-    background-color: #F2E30F;
+    background-color: var(--violet);
     width: 100%;
     height: 55px;
     color: rgba(255, 255, 255, 0.425);
@@ -27,7 +27,7 @@ nav button{
 
 nav button.rayitasmenu {
     margin-left: 10px;
-    background-color: #F2620F;
+    background-color: var(--verde);
     height: 55px;
 }
 
@@ -48,7 +48,7 @@ nav button.rayitasmenu {
   .popup-menu button {
     width: 100%;
     border: none;
-    background-color: #8552f2be;
+    background-color: var(--blancotrans);
     cursor: pointer;
   }
   
@@ -61,7 +61,7 @@ nav button.rayitasmenu {
     width: 93%;
     border: none;
     color: black;
-    background-color: #8552f2be;
+    background-color: var(--blancotrans);
     cursor: pointer;
     padding: 5px;
     border-radius: 5px;margin-left: 5px;
