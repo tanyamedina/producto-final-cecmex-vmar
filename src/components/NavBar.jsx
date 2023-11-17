@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
+
 export const NavBar = () => {
   const navigate = useNavigate();
   const [menuVisible, setMenuVisible] = useState(false);
@@ -20,6 +22,13 @@ export const NavBar = () => {
     handleCloseMenu();
   };
 
+  const handleShowSistemaImplementado = () => {
+    // Ruta de la imagen en la subcarpeta 'files' dentro de 'public'
+    const sistemaImplementadoImageUrl = '/files/sistema-implementado.jpg';
+    window.open(sistemaImplementadoImageUrl, '_blank');
+    handleCloseMenu();
+  };
+  
   return (
     <nav>
       <div className="popup-container">
@@ -31,9 +40,13 @@ export const NavBar = () => {
             <a href="/files/U4-Actividades-realizadas.pdf" target="_blank" rel="noopener noreferrer" onClick={handleCloseMenu}>
               <button>Actividades realizadas</button>
             </a>
+             {/* Botón para abrir la imagen "Sistema implementado" */}
+            <button onClick={handleShowSistemaImplementado}>Sistema implementado</button>
             <button onClick={handleDownloadSourceCode}>Descargar código fuente</button>
-            <button onClick={() => { navigate("/opcion3"); handleCloseMenu(); }}>Sistema implementado</button>
-            <button onClick={() => { navigate("/opcion3"); handleCloseMenu(); }}>Reporte de modificaciones</button>
+            {/* Enlace directo al PDF */}
+            <a href="/files/U4-Actividades-realizadas.pdf" target="_blank" rel="noopener noreferrer" onClick={handleCloseMenu}>
+              <button>Reporte de modificaciones</button>
+            </a>
             <a href="https://github.com/dianarojo/sitio-web-cecmex.git" target="_blank" rel="noopener noreferrer">
               <button>Ir al repositorio de GitHub</button>
             </a>
