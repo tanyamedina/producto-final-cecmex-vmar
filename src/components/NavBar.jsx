@@ -19,7 +19,7 @@ export const NavBar = () => {
     // Ruta correcta al archivo ZIP
     const downloadUrl = '/files/sitio-web-cecmex.zip';
     window.open(downloadUrl);
-    handleCloseMenu();
+    handleCloseMenu(); 
   };
 
   const handleShowSistemaImplementado = () => {

@@ -5,7 +5,7 @@ export const Footer = () => {
     <div className="footer">
       <p>Licenciatura en Desarrollo de Sistemas Web</p>
       <p>Asesora: Deisy Acosta Ham</p>
-      <p>Por: Tanya Medina</p>
+      <p>Por: Tanya Medina™</p>
     </div>
   );
 };
