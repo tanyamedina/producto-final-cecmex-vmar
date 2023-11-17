@@ -7,12 +7,13 @@
 }
 
 .home h1 {
+  font-family: 'Garamond', sans-serif;
   color: #ffffff;
 }
 
 .home h2 {
-  font-family: 'Verdana';
-  margin-bottom: 80px;
+  font-family: 'Garamond', sans-serif;
+  margin-bottom: 100px;
 }
 
 .home h3.custom-h3 {

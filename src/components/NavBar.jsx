@@ -35,7 +35,6 @@ export const NavBar = () => {
         <button className="rayitasmenu" onClick={handleToggleMenu}>☰</button>
         {menuVisible && (
           <div className="popup-menu">
-            <button onClick={() => { navigate("/Home"); handleCloseMenu(); }}>Home</button>
             {/* Enlace directo al PDF */}
             <a href="/files/U4-Actividades-realizadas.pdf" target="_blank" rel="noopener noreferrer" onClick={handleCloseMenu}>
               <button>Actividades realizadas</button>
