@@ -9,5 +9,3 @@ dist/
 # Ignorar cualquier otro archivo que no necesite ser versionado
 ...
 
-# Carpeta de despliegue
-docs/
