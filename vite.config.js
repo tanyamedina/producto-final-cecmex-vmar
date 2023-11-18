@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: 'src/main.js', // Asegúrate de que sea la ruta correcta a tu archivo principal
+      input: 'src/main.jsx', // Asegúrate de que sea la ruta correcta a tu archivo principal
     },
   },
 });
