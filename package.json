@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/tanyamedina/producto-final-cecmex-vmar.git",
+  "homepage": "https://tanyamedina.github.io/producto-final-cecmex-vmar/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -b main"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -27,9 +27,9 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^3.2.3",
     "vite": "^4.4.5",
-    "vite-plugin-css": "^1.0.4",
-    "gh-pages": "^3.2.3"
+    "vite-plugin-css": "^1.0.4"
   },
   "eslintConfig": {
     "extends": [
